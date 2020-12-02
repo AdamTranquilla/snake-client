@@ -10,8 +10,7 @@ const connect = function() {
   conn.on('connect', () => {
     conn.write('Name: AKT');
 
-    setInterval(() => {conn.write('Move: up');}, 1)
-
+    //setInterval(() => { conn.write('Move: up'); }, 1);
 
     console.log('Successfully connected to game server');
   });
